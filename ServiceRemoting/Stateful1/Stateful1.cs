@@ -6,12 +6,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.ServiceFabric.Data.Collections;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
-using Microsoft.ServiceFabric.Services.Runtime;
-using Microsoft.ServiceFabric.Services.Remoting.Runtime;
-using RemotingInterfaceV2;
-using Microsoft.ServiceFabric.Services.Communication.Wcf.Runtime;
 using Microsoft.ServiceFabric.Services.Communication.Wcf;
-using WcfModel;
+using Microsoft.ServiceFabric.Services.Communication.Wcf.Runtime;
+using Microsoft.ServiceFabric.Services.Runtime;
+using WcfInterface;
 
 namespace Stateful1
 {
@@ -27,11 +25,6 @@ namespace Stateful1
         public Task<int> Add(int value1, int value2)
         {
             return Task.FromResult(value1 + value2);
-        }
-
-        public Task<string> HelloWorldAsync()
-        {
-            return Task.FromResult<string>("Hello");
         }
 
         /// <summary>

@@ -9,7 +9,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace Stateful1
 {
-    [EventSource(Name = "MyCompany-Application1-Stateful1")]
+    [EventSource(Name = "MyCompany-Application3-Stateful1")]
     internal sealed class ServiceEventSource : EventSource
     {
         public static readonly ServiceEventSource Current = new ServiceEventSource();

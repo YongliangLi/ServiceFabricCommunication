@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
-    <ProjectGuid>{EDA47917-8841-4D1F-8E69-C664520AE939}</ProjectGuid>
+    <ProjectGuid>{C9F416E3-4C8E-4CBE-B1FA-FA157F4F16F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Stateful1</RootNamespace>
     <AssemblyName>Stateful1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
@@ -105,13 +105,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RemotingInterfaceV2\RemotingInterfaceV2.csproj">
-      <Project>{6B1D7DE3-C34F-48D8-B6C0-6F6A7D9176B3}</Project>
-      <Name>RemotingInterfaceV2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WcfModel\WcfModel.csproj">
-      <Project>{8e8583bf-1f2b-4e4e-a2d8-cf5a8d8929f7}</Project>
-      <Name>WcfModel</Name>
+    <ProjectReference Include="..\WcfInterface\WcfInterface.csproj">
+      <Project>{1a5d28c7-f8aa-4ed2-ab94-089e23b8827a}</Project>
+      <Name>WcfInterface</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
